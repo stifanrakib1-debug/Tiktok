@@ -5,31 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>আমাদের TikTok Ads কমিউনিটি</title>
     <style>
-        /* Optional: background & basic styling if someone opens page before redirect */
         body {
-            background: #fe2c55;
+            background: linear-gradient(135deg, #fe2c55, #69c9d0);
             display:flex;
             justify-content:center;
             align-items:center;
             height:100vh;
-            color:white;
             font-family:'Arial', sans-serif;
             text-align:center;
+            color:white;
         }
-        h1 { font-size:2rem; margin-bottom:20px; }
-        p { font-size:1.2rem; }
+        h1 { font-size:2rem; margin-bottom:20px; animation: pulse 1.5s infinite; }
+        p { font-size:1.2rem; margin-bottom:30px; }
+        a {
+            display:inline-block;
+            text-decoration:none;
+            background:white;
+            color:#fe2c55;
+            padding:12px 30px;
+            border-radius:8px;
+            font-weight:bold;
+            transition: transform 0.3s, background 0.3s;
+        }
+        a:hover { transform: scale(1.1); background:#ffd6e0; }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @media(max-width:600px){
+            h1 { font-size:1.6rem; }
+            p { font-size:1rem; }
+        }
     </style>
     <script>
-        // Instant redirect to WhatsApp channel
         window.addEventListener('DOMContentLoaded', () => {
-            window.location.href = "https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t";
+            const whatsappLink = "https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t";
+            // Auto redirect after 30 seconds (30000ms)
+            setTimeout(() => {
+                window.location.href = whatsappLink;
+            }, 30000);
         });
     </script>
 </head>
 <body>
     <div>
         <h1>✨ TikTok Ads কমিউনিটিতে স্বাগতম! ✨</h1>
-        <p>আপনি সরাসরি WhatsApp চ্যানেলে চলে যাচ্ছেন…</p>
+        <p>আপনি 30 সেকেন্ডের মধ্যে WhatsApp চ্যানেলে চলে যাবেন…</p>
+        <p>যদি আগেই যেতে চান, নিচের বাটনটি ক্লিক করুন:</p>
+        <a href="https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t" target="_blank">এখানেই যোগ দিন</a>
     </div>
 </body>
 </html>
