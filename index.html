@@ -1,60 +1,124 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ফ্রি সাপোর্টি কমিউনিটি</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #fe2c55, #69c9d0); /* TikTok style gradient */
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            font-family:'Arial', sans-serif;
-            text-align:center;
-            color:white;
-        }
-        h1 { font-size:2rem; margin-bottom:20px; animation: pulse 5s infinite; }
-        p { font-size:1.2rem; margin-bottom:30px; }
-        a {
-            display:inline-block;
-            text-decoration:none;
-            background:white;
-            color:#fe2c55;
-            padding:12px 30px;
-            border-radius:8px;
-            font-weight:bold;
-            transition: transform 0.3s, background 0.3s;
-        }
-        a:hover { transform: scale(1.1); background:#ffd6e0; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bangla TikTok Ads Community</title>
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
+<!-- ================= TikTok Pixel ================= -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject = t;
+  var ttq = w[t] = w[t] || [];
+  ttq.methods = ["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
+  ttq.setAndDefer = function(t, e) {
+    t[e] = function() {
+      t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+    }
+  };
+  for (var i = 0; i < ttq.methods.length; i++) {
+    ttq.setAndDefer(ttq, ttq.methods[i]);
+  }
+  ttq.load('PIXEL_ID_HERE'); /* 👉 এখানে নিজের Pixel ID বসাও */
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- ================================================= -->
 
-        @media(max-width:600px){
-            h1 { font-size:1.6rem; }
-            p { font-size:1rem; }
-        }
-    </style>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const whatsappLink = "https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t";
-            // Auto redirect after 5 seconds (5000ms)
-            setTimeout(() => {
-                window.location.href = whatsappLink;
-            }, 5000);
-        });
-    </script>
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#fe2c55,#69c9d0);
+  color:#fff;
+}
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+  text-align:center;
+}
+h1{font-size:2.2rem;margin-bottom:15px;}
+p{font-size:1.1rem;line-height:1.6;margin-bottom:20px;}
+.cta{
+  display:inline-block;
+  background:#fff;
+  color:#fe2c55;
+  padding:14px 30px;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+}
+.cta:hover{background:#ffe1e7;}
+.box{
+  background:rgba(255,255,255,.12);
+  border-radius:10px;
+  padding:25px;
+  margin-top:40px;
+  text-align:left;
+}
+footer{
+  margin-top:50px;
+  font-size:.9rem;
+  opacity:.9;
+}
+@media(max-width:600px){
+  h1{font-size:1.8rem;}
+  p{font-size:1rem;}
+}
+</style>
+
+<script>
+window.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{
+    window.location.href="https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t";
+  },5000);
+});
+function trackJoin(){
+  if(window.ttq){ttq.track('ClickButton');}
+}
+</script>
 </head>
+
 <body>
-    <div>
-        <h1>✨ফ্রি সাপোর্টি কমিউনিটিতে স্বাগতম!✨</h1>
-        <p>🔥ফ্রিতে ভিডিও ভাইরাল করতে🔥…</p>
-        <p> ✅আমাদের কমিউনিটিত জয়েন করুন✅:</p>
-        <a href="https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t" target="_blank">এখানেই যোগ দিন</a>
-    </div>
+<div class="container">
+
+<h1>বাংলা TikTok  সাপোর্ট কমিউনিটি</h1>
+<p>
+TikTok  শেখা, স্কেল করা ও সমস্যা সমাধানের জন্য  
+একটি সম্পূর্ণ বাংলা WhatsApp কমিউনিটি।
+</p>
+
+<p><strong>৫ সেকেন্ডের মধ্যে WhatsApp চ্যানেলে চলে যাবেন</strong></p>
+
+<a class="cta"
+href="https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t"
+target="_blank"
+onclick="trackJoin()">
+WhatsApp চ্যানেলে যোগ দিন
+</a>
+
+<div class="box">
+<h2>Privacy Policy</h2>
+<p>
+আমরা কোনো ব্যক্তিগত তথ্য সংগ্রহ করি না।  
+এই পেজ শুধুমাত্র ব্যবহারকারীকে WhatsApp কমিউনিটিতে রিডাইরেক্ট করার জন্য।
+</p>
+</div>
+
+<div class="box">
+<h2>Terms & Conditions</h2>
+<ul>
+<li>কমিউনিটির নিয়ম মেনে চলতে হবে</li>
+<li>স্প্যাম বা বিভ্রান্তিকর তথ্য দেওয়া যাবে না</li>
+<li>TikTok ও WhatsApp নীতিমালা মানতে হবে</li>
+</ul>
+</div>
+
+<footer>
+© 2026 Bangla TikTok Ads Community
+</footer>
+
+</div>
 </body>
 </html>
