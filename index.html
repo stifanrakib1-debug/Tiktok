@@ -3,45 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Creators-এর জন্য Free Community</title>
-    <!-- Auto redirect 1.5 seconds পরে WhatsApp channel-এ -->
-    <meta http-equiv="refresh" content="4;url=https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t">
+    <title>আমাদের TikTok Ads কমিউনিটি</title>
     <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Arial', sans-serif; }
+
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f9f9f9;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            background: linear-gradient(135deg, #fe2c55, #69c9d0); /* TikTok style gradient */
+            color:white;
         }
-        .container {
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+        h1 {
+            font-size:2rem;
+            margin-bottom:20px;
+            animation: pulse 1.5s infinite;
         }
-        h1 { color: #333; }
-        p { color: #555; }
-        a.button {
-            display: inline-block;
-            padding: 12px 25px;
-            margin-top: 20px;
-            background: #25D366; /* WhatsApp green */
-            color: #fff;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
+
+        p {
+            font-size:1.2rem;
+            margin-bottom:30px;
+        }
+
+        a {
+            display:inline-block;
+            text-decoration:none;
+            background:white;
+            color:#fe2c55;
+            padding:12px 30px;
+            border-radius:8px;
+            font-weight:bold;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            background:#ffd6e0;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @media(max-width:600px){
+            h1 { font-size:1.6rem; }
+            p { font-size:1rem; }
         }
     </style>
+    <script>
+        // Auto redirect after 30 seconds (instant, no fade)
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                window.location.href = "https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t";
+            }, 30000);
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Content Creators-এর জন্য ফ্রি Community</h1>
-        <p>শিখুন, আইডিয়া শেয়ার করুন এবং নিজের কন্টেন্ট journey উন্নত করুন।</p>
-        <a href="https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t" class="button">WhatsApp-এ যোগ দিন</a>
-        <p style="margin-top:15px; font-size:12px; color:#999;"></p>
+    <div>
+        <h1>✨ TikTok Ads কমিউনিটিতে স্বাগতম! ✨</h1>
+        <p>।</p>
+        <a href="https://whatsapp.com/channel/0029Vb6JNGmCsU9Nu9lsmY0t" target="_blank">এখানেই যোগ দিন</a>
     </div>
 </body>
 </html>
